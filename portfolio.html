@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!--Шапка сайта-->
+    <header class="heder">
+      <div class="container heder-container">
+        <nav class="nav">
+          <a class="logo nav__logo link" href="/"
+            >Web<span class="logo--dark-color">Studio</span></a
+          >
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="connect list">
+          <!-- Ссылка на телефонный номер -->
+          <li class="connect__item">
+            <a class="connect__tel link" href="tel:+380961111111"
+              ><svg class="connect__icon-tel">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+          <!-- Ссылка на адрес электронной почты  -->
+          <li>
+            <a class="connect__mailto link" href="mailto:info@devstudio.com"
+              ><svg class="connect__icon-mailto">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn_icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu_top">
+            <button class="mob-menu__btn" type="button">
+              <svg class="mob-menu__icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link mob-current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu_bottom">
+            <div class="mob-connect">
+              <ul class="mob-connect__list list">
+                <!-- Ссылка на телефонный номер -->
+                <li class="mob-connect__item">
+                  <a class="mob-connect__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                </li>
+                <!-- Ссылка на адрес электронной почты  -->
+                <li>
+                  <a class="mob-connect__mailto link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="mob-soc_list list">
+              <li class="mob-soc_item"><a class="mob-soc_link link" href="">Instagram</a></li>
+              <li class="mob-soc_item"><a class="mob-soc_link link" href="">Twitter</a></li>
+              <li class="mob-soc_item"><a class="mob-soc_link link" href="">Facebook</a></li>
+              <li class="mob-soc_item"><a class="mob-soc_link link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="projects">
+        <div class="container">
+          <h1 class="visually-hidden">Нашы проекты</h1>
+          <!-- <ul class="projects__list list">
+            <li class="projects__item"><button type="button" class="projects__btn">Все</button></li>
+            <li class="projects__item">
+              <button type="button" class="projects__btn">Веб-сайты</button>
+            </li>
+            <li class="projects__item">
+              <button type="button" class="projects__btn">Приложения</button>
+            </li>
+            <li class="projects__item">
+              <button type="button" class="projects__btn">Дизайн</button>
+            </li>
+            <li class="projects__item">
+              <button type="button" class="projects__btn">Маркетинг</button>
+            </li>
+          </ul> -->
+          <ul class="card-list list">
+            <li class="card-list__item">
+              <a class="card-list__link link" href="">
+                <div class="card-list__img-container">
+                  <img src="./images/portfolioimg1.jpg" alt="МакБук" width="370" height="294" />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">Технокряк</h2>
+                  <p class="card-list__item-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img
+                    src="./images/portfolioimg2.jpg"
+                    alt="Двое людей играють в баскетбол"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card-list__item-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href="">
+                <div class="card-list__img-container">
+                  <img
+                    src="./images/portfolioimg3.jpg"
+                    alt="Логотип рестрана"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">
+                    Ресторан <span class="card-list__title" lang="en">Seafood</span>
+                  </h2>
+                  <p class="card-list__item-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img src="./images/portfolioimg4.jpg" alt="Наушники" width="370" height="294" />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">
+                    Проект <span class="card-list__title" lang="en">Prime</span>
+                  </h2>
+                  <p class="card-list__item-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img
+                    src="./images/portfolioimg5.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">
+                    Проект <span class="card-list__title" lang="en">Boxes</span>
+                  </h2>
+                  <p class="card-list__item-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img src="./images/portfolioimg6.jpg" alt="Монитор" width="370" height="294" />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="card-list__item-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img
+                    src="./images/portfolioimg7.jpg"
+                    alt="Одкрытый журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">
+                    Издание <span class="card-list__title" lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="card-list__item-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img src="./images/portfolioimg8.jpg" alt="Ярлык" width="370" height="294" />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title">
+                    Проект <span class="card-list__title" lang="en">LAB</span> LAB
+                  </h2>
+                  <p class="card-list__item-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card-list__item">
+              <a class="card-list__link link" href=""
+                ><div class="card-list__img-container">
+                  <img
+                    src="./images/portfolioimg9.jpg"
+                    alt="Бизнес приложение"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="card-list__top-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+
+                <div class="card-list__conteiner">
+                  <h2 class="card-list__title" lang="en">Growing Business</h2>
+                  <p class="card-list__item-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <address class="footer__address-container">
+          <a lang="en" class="logo footer__logo link" href="/"
+            >Web<span lang="en" class="logo--light-color">Studio</span></a
+          >
+          <ul class="footer__list list">
+            <!-- Ссылка на адрес -->
+            <li class="footer__item">
+              <a class="footer__address link" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <!-- Ссылка на телефонный номер -->
+            <li class="footer__item">
+              <a class="footer__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <!-- Ссылка на адрес электронной почты  -->
+            <li class="footer__item">
+              <a class="footer__mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <div class="container footer__soc-container">
+          <p class="footer__soc-text">присоединяйтесь</p>
+          <ul class="socials list">
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark link">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark link">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark link">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link socials__link--dark link">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form__container">
+          <form>
+            <label for="footer-email" class="footer-form__label">Подпишитесь на рассылку</label>
+            <div class="footer-form__subcribe">
+              <input
+                type="email"
+                class="footer-form__input"
+                name="user-email"
+                placeholder="E-mail"
+                id="footer-email"
+              />
+              <button type="submit" class="footer-form__btn btn">
+                Подписаться
+                <svg class="footer-form__svg">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/menu.js"></script>
+</html>
