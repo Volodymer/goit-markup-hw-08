@@ -1,0 +1,40 @@
+.hero {
+  padding: 118px 0px;
+  @include desktop {
+    padding: 200px 0px;
+  }
+  text-align: center;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background: var(--hero--babackground-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/heroimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  @include font(26px, 900, 1.61, 0.06em);
+  @include desktop {
+    @include font(44px, null, 1.36, null);
+  }
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 360px;
+  @include desktop {
+    max-width: 696px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__btn {
+  padding: 10px 32px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

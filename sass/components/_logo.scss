@@ -1,0 +1,12 @@
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  @include font(26px, 700, 1.19, 0.03em);
+  display: inline-block;
+}
+.logo--dark-color {
+  color: #000000;
+}
+.logo--light-color {
+  color: #ffffff;
+}

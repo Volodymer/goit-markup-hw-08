@@ -1,0 +1,9 @@
+.title {
+  font-style: normal;
+  @include font(28px, 700, 1.18, 0.03em);
+  text-align: center;
+  color: var(--main-title-color);
+  @include desktop {
+    @include font(36px, null, 1.16, null);
+  }
+}

@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+/* заберає підкреслення */
+.link {
+  text-decoration: none;
+}
+
+/* змінює вид маркера */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
