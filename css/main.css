@@ -605,6 +605,7 @@ body {
 
 .mob-soc_list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-soc_link {
@@ -614,6 +615,10 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.mob-soc_item {
+  margin-bottom: 8px;
 }
 
 .mob-soc_item:not(:last-child) {
@@ -937,18 +942,32 @@ body {
 }
 
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .projects__list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-
-.projects__item + .projects__item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .projects__list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__list {
+    margin-bottom: 50px;
+  }
 }
 
 .card-list {
@@ -958,7 +977,17 @@ body {
 }
 
 .card-list__conteiner {
-  min-width: 370px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .card-list__conteiner {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__conteiner {
+    max-width: 370px;
+  }
 }
 
 .card-list__item {
