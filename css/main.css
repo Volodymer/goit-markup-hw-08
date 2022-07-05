@@ -194,8 +194,8 @@ body {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  max-height: 608px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -204,6 +204,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__btn {
@@ -242,11 +248,16 @@ body {
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -311,14 +322,20 @@ body {
 
 .form__check-text {
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .form__check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__link {
@@ -617,8 +634,10 @@ body {
   color: #2196f3;
 }
 
-.mob-soc_item {
-  margin-bottom: 8px;
+@media screen and (max-width: 390px) {
+  .mob-soc_item:nth-child(-n+2) {
+    margin-bottom: 8px;
+  }
 }
 
 .mob-soc_item:not(:last-child) {
@@ -1065,9 +1084,15 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 .card-list__link:hover .card-list__top-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .card-list__top-text {
+    overflow: visible;
+  }
 }
 
 .card-list__img-container {
@@ -1081,6 +1106,20 @@ body {
 }
 .card-list__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-list__top-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-list__top-text::-webkit-scrollbar-track {
+  background-color: rgba(84, 77, 77, 0.6862745098);
+}
+
+.card-list__top-text::-webkit-scrollbar-thumb {
+  background-color: #188ce8;
+  border-radius: 4px;
+  border: 2px solid rgba(84, 77, 77, 0.6862745098);
 }
 
 .footer {
