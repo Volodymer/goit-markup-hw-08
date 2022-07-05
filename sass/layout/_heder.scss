@@ -202,6 +202,7 @@
 
 .mob-soc_list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-soc_link {
@@ -211,6 +212,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.mob-soc_item {
+  margin-bottom: 8px;
 }
 
 .mob-soc_item:not(:last-child) {
