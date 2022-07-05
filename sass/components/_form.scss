@@ -53,11 +53,14 @@
 }
 .form__check-text {
   font-style: normal;
-  @include font(14px, 400, 1.71, 0.03em);
+  @include font(12px, 400, 1.16, 0.03em);
   color: #757575;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    @include font(14px, null, 1.71, null);
+  }
 }
 .form__link {
   margin-left: 5px;

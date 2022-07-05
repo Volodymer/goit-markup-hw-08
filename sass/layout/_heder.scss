@@ -214,8 +214,10 @@
   color: #2196f3;
 }
 
-.mob-soc_item {
-  margin-bottom: 8px;
+.mob-soc_item:nth-child(-n + 2) {
+  @media screen and (max-width: 390px) {
+    margin-bottom: 8px;
+  }
 }
 
 .mob-soc_item:not(:last-child) {
