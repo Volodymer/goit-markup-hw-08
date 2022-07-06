@@ -173,34 +173,58 @@
           <h2 class="title about__title">Чем мы занимаемся</h2>
           <ul class="about__list list">
             <li class="about__item">
-              <img
-                src="./images/img(1).jpg"
-                alt="Программист, работающий в своем рабочем офисе"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_1-min.jpg    1x,
+                    ./images/desktop/d_engage_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/d_engage_1-min.jpg"
+                  alt="Программист, работающий в своем рабочем офисе"
+                  width="370"
+                />
+              </picture>
               <div class="about__container">
                 <p class="about__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/img(2).jpg"
-                alt="Дизайнер разрабатывает приложение для смартфона"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_2-min.jpg    1x,
+                    ./images/desktop/d_engage_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/d_engage_2-min.jpg"
+                  alt="Дизайнер разрабатывает приложение для смартфона"
+                  width="370"
+                />
+              </picture>
               <div class="about__container">
                 <p class="about__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/img(3).jpg"
-                alt="Веб дизайнер подбирает цвет на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_engage_3-min.jpg    1x,
+                    ./images/desktop/d_engage_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/d_engage_3-min.jpg"
+                  alt="Веб дизайнер подбирает цвет на планшете"
+                  width="370"
+                />
+              </picture>
               <div class="about__container">
                 <p class="about__text">Дизайнерские решения</p>
               </div>
@@ -214,12 +238,34 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/ProductDesigner.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_1-min.jpg    1x,
+                    ./images/desktop/d_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t_command_1-min.jpg    1x,
+                    ./images/tablet/t_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_1-min.jpg    1x,
+                    ./images/mobile/m_command_1@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mobile/m_command_1-min.jpg "
+                  alt="Игорь Демьяненко"
+                  width="450"
+                />
+              </picture>
               <h3 class="team__title-text">Игорь Демьяненко</h3>
               <p lang="en" class="team__text">Product Designer</p>
               <ul class="team__soc-list socials list">
@@ -254,12 +300,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/FrontendDeveloper.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_2-min.jpg    1x,
+                    ./images/desktop/d_command_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t_command_2-min.jpg    1x,
+                    ./images/tablet/t_command_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_2-min.jpg    1x,
+                    ./images/mobile/m_command_2@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobile/m_command_2-min.jpg " alt="Ольга Репина" width="450" />
+              </picture>
               <h3 class="team__title-text">Ольга Репина</h3>
               <p lang="en" class="team__text">Frontend Develope</p>
               <ul class="socials team__soc-list list">
@@ -294,7 +358,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/Marketing.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_3-min.jpg    1x,
+                    ./images/desktop/d_command_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t_command_3-min.jpg    1x,
+                    ./images/tablet/t_command_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_3-min.jpg    1x,
+                    ./images/mobile/m_command_3@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobile/m_command_3-min.jpg " alt="Николай Тарасов" width="450" />
+              </picture>
               <h3 class="team__title-text">Николай Тарасов</h3>
               <p lang="en" class="team__text">Marketing</p>
               <ul class="team__soc-list socials list">
@@ -329,7 +416,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/UIDesigner.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/d_command_4-min.jpg    1x,
+                    ./images/desktop/d_command_4@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t_command_4-min.jpg    1x,
+                    ./images/tablet/t_command_4@2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/m_command_4-min.jpg    1x,
+                    ./images/mobile/m_command_4@2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mobile/m_command_4-min.jpg " alt="Михаил Ермаков" width="450" />
+              </picture>
               <h3 class="team__title-text">Михаил Ермаков</h3>
               <p lang="en" class="team__text">UI Designer</p>
               <ul class="team__soc-list socials list">
