@@ -14,10 +14,14 @@
 }
 
 .preferences__title {
+  text-align: center;
   @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .preferences__container {
